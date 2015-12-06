@@ -54,7 +54,7 @@ LOCAL_CFLAGS += -DUSE_KK_CODE
 endif
 
 #ifeq ($(TARGET_USE_VENDOR_CAMERA_EXT),true)
-#LOCAL_C_INCLUDES += hardware/qcom/display/msm8974/libgralloc
+#LOCAL_C_INCLUDES += hardware/qcom/display/libgralloc
 #else
 LOCAL_C_INCLUDES += hardware/qcom/display/libgralloc
 #endif
