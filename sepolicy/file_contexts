@@ -2,6 +2,8 @@
 /persist/acc_avg(/.*)?                               u:object_r:sensors_persist_file:s0
 /persist/prox_avg(/.*)?                              u:object_r:sensors_persist_file:s0
 
+/sys/devices/soc\.0/qpnp-linearcharger-[0-9a-f]+/power_supply/battery/capacity  u:object_r:sysfs_batteryinfo:s0
+
 /persist/.genmac                                u:object_r:wifi_data_file:s0
 /persist/.bt_nv.bin                             u:object_r:bluetooth_data_file:s0
 
