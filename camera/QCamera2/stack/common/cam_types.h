@@ -34,8 +34,8 @@
 #include <pthread.h>
 #include <inttypes.h>
 #include <media/msmb_camera.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define CAM_MAX_NUM_BUFS_PER_STREAM  (24)
 #define MAX_METADATA_PAYLOAD_SIZE    (1024)
@@ -851,7 +851,6 @@ typedef struct {
     cam_focus_distances_info_t focus_dist;       /* focus distance */
     int32_t focus_pos;
     uint32_t focused_frame_idx;
-    cam_focus_mode_type focus_mode;        /* focus mode from backend */
 } cam_auto_focus_data_t;
 
 typedef struct {
