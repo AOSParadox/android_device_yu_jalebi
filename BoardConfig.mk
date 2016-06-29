@@ -19,6 +19,9 @@
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+ADD_RADIO_FILES ?= true
+TARGET_RELEASETOOLS_EXTENSIONS := device/yu/jalebi
+
 ENABLE_CPUSETS := true
 
 # ANT+
