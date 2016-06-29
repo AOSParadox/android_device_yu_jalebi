@@ -20,9 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from jalebi device
 $(call inherit-product, device/yu/jalebi/device.mk)
 
-# Copy firmware
-$(call inherit-product, device/yu/jalebi/radio.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := jalebi
 PRODUCT_NAME := full_jalebi
