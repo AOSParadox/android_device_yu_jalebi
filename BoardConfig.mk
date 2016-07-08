@@ -65,6 +65,16 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm
 # Display
 TARGET_USES_C2D_COMPOSITION := true
 
+# Dexopt
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),user)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
+
 # Double Tap to Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_enable"
 
