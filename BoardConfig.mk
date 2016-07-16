@@ -62,9 +62,6 @@ TARGET_USES_AOSP := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm
 
-# Display
-TARGET_USES_C2D_COMPOSITION := true
-
 # Dexopt
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),user)
@@ -75,16 +72,9 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
-# Double Tap to Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_enable"
-
 # FM
 TARGET_QCOM_NO_FM_FIRMWARE := true
 AUDIO_FEATURE_ENABLED_FM := true
-
-# Lights
-BOARD_LIGHTS_VARIANT := aw2013
-
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/yu/jalebi/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1

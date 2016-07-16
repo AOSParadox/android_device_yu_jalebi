@@ -15,8 +15,6 @@
 #
 $(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
 # OpenGLES
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
@@ -29,13 +27,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/yu/jalebi/prebuilt/system,system)
 
-# Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/aosparadox/bootanimation/720p_PNG_bootanimation.zip:system/media/bootanimation.zip
-
 # CAF Branch
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.par.branch=LA.BR.1.2.7-02810-8x16.0
+
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/aosparadox/bootanimation/720p_PNG_bootanimation.zip:system/media/bootanimation.zip
 
 # CodeAurora msm8916_64 Tree
 include device/qcom/msm8916_32/msm8916_32.mk
@@ -110,10 +108,6 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     libtinyxml
-
-# Lights
-PRODUCT_PACKAGES += \
-    lights.msm8916.so
 
 # Power HAL
 PRODUCT_PACKAGES += \
