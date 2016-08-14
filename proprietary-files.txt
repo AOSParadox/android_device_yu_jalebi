@@ -7,31 +7,6 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
-# modem
-etc/firmware/mba.mbn
-etc/firmware/modem.b00
-etc/firmware/modem.b01
-etc/firmware/modem.b02
-etc/firmware/modem.b03
-etc/firmware/modem.b04
-etc/firmware/modem.b05
-etc/firmware/modem.b06
-etc/firmware/modem.b08
-etc/firmware/modem.b09
-etc/firmware/modem.b12
-etc/firmware/modem.b13
-etc/firmware/modem.b14
-etc/firmware/modem.b15
-etc/firmware/modem.b16
-etc/firmware/modem.b17
-etc/firmware/modem.b18
-etc/firmware/modem.b21
-etc/firmware/modem.b22
-etc/firmware/modem.b23
-etc/firmware/modem.b25
-etc/firmware/modem.b26
-etc/firmware/modem.mdt
-
 # Modem config
 etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/sa/brazil/commerci/mcfg_sw.mbn
 etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srte/dsds/cta/mcfg_sw.mbn
