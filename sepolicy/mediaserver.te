@@ -1,0 +1,2 @@
+# Allow mediaserver to search in firmware files
+allow mediaserver firmware_file:dir search;
