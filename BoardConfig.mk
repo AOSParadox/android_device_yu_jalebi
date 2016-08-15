@@ -75,6 +75,10 @@ WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 # FM
 TARGET_QCOM_NO_FM_FIRMWARE := true
 AUDIO_FEATURE_ENABLED_FM := true
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/yu/jalebi/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
