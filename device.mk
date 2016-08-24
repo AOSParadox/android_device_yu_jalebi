@@ -35,15 +35,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aosparadox/bootanimation/720p_PNG_bootanimation.zip:system/media/bootanimation.zip
 
-# Dalvik/HWUI
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.text_large_cache_height=2048 \
-    dalvik.vm.heapgrowthlimit=128m \
-    dalvik.vm.heapminfree=6m \
-    dalvik.vm.heapstartsize=14m
-
 # CodeAurora msm8916_64 Tree
 include device/qcom/msm8916_32/msm8916_32.mk
 
@@ -87,9 +78,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dalvik Properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hwui.text_large_cache_height=2048 \
+    dalvik.vm.heapstartsize=14m \
     dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapsize=256m \
+    dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=6m \
-    dalvik.vm.heapstartsize=14m
+    dalvik.vm.heapmaxfree=8m
 
 # Display
 PRODUCT_PACKAGES += \
