@@ -66,6 +66,10 @@ on boot
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
+    # Touchscreen
+    chown system system /proc/gesture_enable
+    chmod 0660 /proc/gesture_enable
+
 on charger
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
