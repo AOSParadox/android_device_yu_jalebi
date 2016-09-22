@@ -37,3 +37,6 @@ $(call add-radio-file,images/rpm.mbn)
 $(call add-radio-file,images/sbl1.mbn)
 $(call add-radio-file,images/splash.img)
 $(call add-radio-file,images/tz.mbn)
+
+# Proprietary
+$(call add-radio-file,../../../vendor/volte/jalebi/radio/NON-HLOS.bin)
