@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 $(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
+$(call inherit-product-if-exists, vendor/volte/volte.mk)
+$(call inherit-product-if-exists, vendor/volte/jalebi/jalebi-vendor.mk)
 
 # OpenGLES
 PRODUCT_COPY_FILES += \
