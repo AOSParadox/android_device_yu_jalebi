@@ -105,7 +105,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Qualcomm support
-BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QCOM_HARDWARE := false
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/yu/jalebi/ramdisk/fstab.qcom
