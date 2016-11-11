@@ -83,6 +83,7 @@ TARGET_GESTURES_NODE := "/sys/devices/virtual/touchscreen/touchscreen_dev/double
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Kernel
+ENABLE_CPUSETS := true
 BOARD_CUSTOM_BOOTIMG_MK := device/yu/jalebi/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
