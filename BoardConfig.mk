@@ -113,7 +113,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/yu/jalebi/sepolicy
+    device/yu/jalebi/sepolicy \
+    device/yu/jalebi/charger/sepolicy
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
