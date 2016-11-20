@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 
 # CodeAurora msm8916_64 Tree
 include device/qcom/msm8916_32/msm8916_32.mk
+include vendor/camera/camera.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/yu/jalebi/overlay
