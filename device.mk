@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 $(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
+$(call inherit-product-if-exists, vendor/camera/camera.mk)
 $(call inherit-product-if-exists, vendor/volte/volte.mk)
 $(call inherit-product-if-exists, vendor/volte/jalebi/jalebi-vendor.mk)
 
@@ -39,7 +40,6 @@ PRODUCT_COPY_FILES += \
 
 # CodeAurora msm8916_64 Tree
 include device/qcom/msm8916_32/msm8916_32.mk
-include vendor/camera/camera.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/yu/jalebi/overlay
