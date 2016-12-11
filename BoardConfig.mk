@@ -72,7 +72,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 AUDIO_FEATURE_ENABLED_FM := true
 
 # Gestures
-TARGET_GESTURES_NODE := "/sys/devices/virtual/touchscreen/touchscreen_dev/doubletap2wake"
+TARGET_GESTURES_NODE := "/proc/gesture_enable"
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
