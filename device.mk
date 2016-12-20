@@ -18,6 +18,11 @@ $(call inherit-product-if-exists, vendor/camera/camera.mk)
 $(call inherit-product-if-exists, vendor/volte/volte.mk)
 $(call inherit-product-if-exists, vendor/volte/jalebi/jalebi-vendor.mk)
 
+# Gapps
+$(call inherit-product-if-exists, vendor/google/build/opengapps-packages.mk)
+GAPPS_VARIANT := mini
+GAPPS_FORCE_MATCHING_DPI := true
+
 # OpenGLES
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
