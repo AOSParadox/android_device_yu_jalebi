@@ -85,6 +85,7 @@ AUDIO_FEATURE_ENABLED_FM := true
 TARGET_GESTURES_NODE := "/proc/gesture_enable"
 
 # Lights
+BOARD_LIGHTS_VARIANT := aw2013
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Kernel
