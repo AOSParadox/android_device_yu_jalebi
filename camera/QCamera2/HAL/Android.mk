@@ -1,5 +1,13 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
+
+LOCAL_CLANG_CFLAGS += \
+        -Wno-error=unused-private-field \
+        -Wno-error=strlcpy-strlcat-size \
+        -Wno-error=gnu-designator \
+        -Wno-error=unused-variable \
+        -Wno-error=format
+
 LOCAL_SRC_FILES := \
         QCamera2Factory.cpp \
         QCamera2Hal.cpp \
@@ -38,6 +46,8 @@ LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
 ifneq ($(call is-platform-sdk-version-at-least,18),true)
 LOCAL_CFLAGS += -DUSE_JB_MR1
 endif
+
+LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON
 
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \
@@ -84,7 +94,6 @@ LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
 
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
-LOCAL_CLANG := false
 LOCAL_32_BIT_ONLY := true
 LOCAL_MODULE_TAGS := optional
 
