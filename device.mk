@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8916
 
+# SimSettings
+PRODUCT_PACKAGES += \
+    SimSettings
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
